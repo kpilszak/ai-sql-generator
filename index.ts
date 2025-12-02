@@ -1,13 +1,14 @@
-import express, { Application, Request, Response } from 'express'
+import express from 'express'
+import type { Application, Request, Response } from 'express'
 import cors from 'cors'
-import Configuration from 'openai'
 import OpenAI from 'openai'
+import dotenv from 'dotenv'
 
 const PORT: number = 8000
 const app: Application = express()
 app.use(cors())
 app.use(express.json())
-require('dotenv').config()
+dotenv.config()
 
 const API_KEY = process.env.API_KEY
 
