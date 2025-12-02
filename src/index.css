@@ -23,6 +23,9 @@ p, input {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .code-display {
@@ -92,4 +95,12 @@ p, input {
 
 p#icon {
     padding: 0 7px;
+}
+
+input {
+    margin: 2%;
+    padding: 16px;
+    border: solid rgba(0, 0, 0, 0.16) 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
