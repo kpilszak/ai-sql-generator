@@ -37,10 +37,12 @@ const App = () => {
   }
 
   console.log(chat)
+  
+  const filteredUserMessages = chat.filter(message => message.role === "user")
 
   return (
     <div className="app">
-      <MessagesDisplay/>
+      <MessagesDisplay userMessages={filteredUserMessages}/>
       <input value={value} onChange={e => setValue(e.target.value)}/>
       <CodeDisplay/>
       <div className="button-container">
