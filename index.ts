@@ -10,8 +10,6 @@ const app: Application = express()
 app.use(cors())
 app.use(express.json())
 
-const API_KEY = process.env.API_KEY
-
 const openai = new OpenAI({
   apiKey: process.env.API_KEY,
 })
